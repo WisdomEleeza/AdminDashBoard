@@ -65,7 +65,7 @@ body {
     /* its displayed none, but we are going
         to use Javascript to show it */
     position: fixed;
-    left: 0;
+    left: -110;
     background: var(--color-white);
     width: 18rem;
     z-index: 3;
@@ -73,6 +73,14 @@ body {
     height: 100vh;
     padding-right: var(--card-padding);
     display: none;
+    animation: showMenu 400ms ease forwards;
+  }
+  /* The @keyframes rule specifies the animation code.
+The animation is created by gradually changing from one set of CSS styles to another. */
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
   }
 
   aside .logo {
