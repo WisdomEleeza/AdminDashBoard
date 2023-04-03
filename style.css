@@ -32,7 +32,7 @@
   --color-dark-variant: #a3bdcc;
   --color-light: rgba(0, 0, 0, 0.4);
   --box-shadow: 0 2rem 3rem var(--color-light);
-
+  margin: 0;
 }
 
 * {
@@ -42,6 +42,7 @@
   appearance: none;
   border: 0;
   text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
 
@@ -50,7 +51,7 @@ html {
 }
 
 body {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   font-family: poppins, sans-serif;
   font-size: 0.88rem;
@@ -64,11 +65,13 @@ body {
 
 .container {
   display: grid;
-  width: 96%;
+  width: 98.5vw;
   margin: 0 auto;
   /* background: red; */
   gap: 1.8rem;
   grid-template-columns: 14rem auto 23rem;
+  /* grid-template-columns: repeat(3, 1fr) */
+
 }
 
 a {
@@ -223,6 +226,7 @@ aside .sidebar a.active span {
 
 aside .sidebar a:hover {
   color: var(--color-primary);
+  box-shadow: var(--box-shadow);
 }
 
 aside .sidebar a:hover span {

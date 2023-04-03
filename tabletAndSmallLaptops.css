@@ -58,7 +58,7 @@ body {
       background: red;
     } */
     .container {
-      width: 94%;
+      /* width: 94vw; */
       grid-template-columns: 7rem auto 23rem;
     }
   
